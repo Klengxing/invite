@@ -1,0 +1,183 @@
+*{ padding: 0;margin: 0;font-size: 16px;}
+body{ width: 100vw;height: 100vh;overflow: hidden;background-color: rgba(0, 0, 0, 0.6);}
+.page{ width: 100vw;height: 100vh;background-color: #ffffff;z-index: 2;background: url("../image/bg.jpg") no-repeat 100%;position: relative;}
+img,h5,h3,.main-text{ position: absolute;}
+.bg{ width: 90vw;height: 92vh;left: 5vw;top: 4vh;
+    -webkit-animation: a 0.5s ease;
+    -moz-animation: a 0.5s ease;
+    -ms-animation: a 0.5s ease;
+    animation: a 0.5s ease;
+}
+.left-lantern{ left: 12vw;}
+.right-lantern{ right: 12vw;transform: scaleX(-1)}
+.left-lantern,.right-lantern,.en-bottom,.left-line,.right-line,.text1,h5,.back,.op-0,h3,.main-text{opacity: 0;}
+.left-lantern,.right-lantern{ width: 10.4vw;top: 6vh;
+    -webkit-animation: b 0.7s ease 0.5s;
+    -moz-animation: b 0.7s ease 0.5s;
+    -ms-animation: b 0.7s ease 0.5s;
+    animation: b 0.7s ease 0.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+.en-bottom{ bottom: 7vh;left:35vw;width: 30vw;-webkit-animation: e 0.7s ease 0.5s;
+    -moz-animation: e 0.7s ease 0.5s;
+    -ms-animation: e 0.7s ease 0.5s;
+    animation: e 0.7s ease 0.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.left-line,.right-line{ bottom: 7.5vh;width: 20vw;}
+.left-line{ left: 14vw;-webkit-animation: l 0.7s ease 0.5s;
+    -moz-animation: l 0.7s ease 0.5s;
+    -ms-animation: l 0.7s ease 0.5s;
+    animation: l 0.7s ease 0.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.right-line{ right: 14vw;-webkit-animation: r 0.7s ease 0.5s;
+    -moz-animation: r 0.7s ease 0.5s;
+    -ms-animation: r 0.7s ease 0.5s;
+    animation: r 0.7s ease 0.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.text1{ left: 50%;top: 50%;width: 50vw; transform: translate(-50%,-75%);-webkit-animation: o 0.2s linear 1.2s;
+    -moz-animation: o 0.2s linear 1.2s;
+    -ms-animation: o 0.2s linear 1.2s;
+    animation: o 0.2s linear 1.2s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */
+}
+h5,h3{ color: #FFE0A9;left: 50%;transform: translateX(-50%);width: fit-content;}
+h3{ top: 18vh;font-size: 18px;}
+.o{-webkit-animation: o 0.2s linear 1.2s;
+    -moz-animation: o 0.2s linear 1.2s;
+    -ms-animation: o 0.2s linear 1.2s;
+    animation: o 0.2s linear 1.2s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+h5{ bottom: 20vh;}
+.b-18{ bottom: 18vh;-webkit-animation: b18 0.3s ease-in 2s;
+    -moz-animation: b18 0.3s ease-in 2s;
+    -ms-animation: b18 0.3s ease-in 2s;
+    animation: b18 0.3s ease-in 2s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.b-22{ bottom: 22vh;-webkit-animation: b22 0.3s ease-in 1.7s;
+    -moz-animation: b22 0.3s ease-in 1.7s;
+    -ms-animation: b22 0.3s ease-in 1.7s;
+    animation: b22 0.3s ease-in 1.7s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.b-26{ bottom: 26vh;-webkit-animation: b26 0.3s ease-in 1.4s;
+    -moz-animation: b26 0.3s ease-in 1.4s;
+    -ms-animation: b26 0.3s ease-in 1.4s;
+    animation: b26 0.3s ease-in 1.4s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.back{ bottom: 4vh;z-index: 99;left: 50vw;transform: translateX(-50%);
+    -webkit-animation: s 1s linear 2.3s infinite;
+    -moz-animation: s 1s linear 2.3s infinite;
+    -ms-animation: s 1s linear 2.3s infinite;
+    animation: s 1s linear 2.3s infinite;}
+@keyframes a{
+    from { transform: scale(0.5)}
+    to { transform: scale(1)}
+}
+@-webkit-keyframes a{
+    from { transform: scale(0.5)}
+    to { transform: scale(1)}
+}
+@keyframes b{
+    from { opacity: 0;top: -20.4vh;}
+    to { opacity: 1;top: 6vh;}
+}
+@-webkit-keyframes b{
+    from { opacity: 0;top: -20.4vh;}
+    to { opacity: 1;top: 6vh;}
+}
+@keyframes e{
+    from { opacity: 1;transform: scale(0.5)}
+    to { opacity: 1;transform: scale(1)}
+}
+@-webkit-keyframes e{
+    from { opacity: 1;transform: scale(0.5)}
+    to { opacity: 1;transform: scale(1)}
+}
+@keyframes l{
+    from { opacity: 1;left: -20vw;}
+    to { opacity: 1;left: 14vw;}
+}
+@-webkit-keyframes l{
+    from { opacity: 1;left: -20vw;}
+    to { opacity: 1;left: 14vw;}
+}
+@keyframes r{
+    from { opacity: 1;right: -20vw;}
+    to { opacity: 1;right: 14vw;}
+}
+@-webkit-keyframes r{
+    from { opacity: 1;right: -20vw}
+    to { opacity: 1;right: 14vw;}
+}
+@keyframes o{
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@-webkit-keyframes o{
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+@keyframes b18{
+    from { opacity: 0;bottom: 16vh;}
+    to { opacity: 1;bottom: 18vh;}
+}
+@-webkit-keyframes b18{
+    from { opacity: 0;bottom: 16vh;}
+    to { opacity: 1;bottom: 18vh;}
+}
+@keyframes b22{
+    from { opacity: 0;bottom: 20vh;}
+    to { opacity: 1;bottom: 22vh;}
+}
+@-webkit-keyframes b22{
+    from { opacity: 0;bottom: 20vh;}
+    to { opacity: 1;bottom: 22vh;}
+}
+@keyframes b26{
+    from { opacity: 0;bottom: 24vh;}
+    to { opacity: 1;bottom: 26vh;}
+}
+@-webkit-keyframes b26{
+    from { opacity: 0;bottom: 24vh;}
+    to { opacity: 1;bottom: 26vh;}
+}
+@keyframes s{
+    0%{ opacity: 0;bottom: 2vh;}
+    75%{ opacity: 1;bottom: 4vh}
+    100%{ opacity: 0;bottom: 4.2vh}
+}
+@-webkit-keyframes s{
+    0%{ opacity: 0;bottom: 2vh;}
+    75%{ opacity: 1;bottom: 4vh}
+    100%{ opacity: 0;bottom: 4.2vh}
+}
+
+.main-text{ top: 28vh;left: 15vw;width: 70vw;-webkit-animation: e 0.7s ease 1.4s;
+    -moz-animation: e 0.7s ease 1.4s;
+    -ms-animation: e 0.7s ease 1.4s;
+    animation: e 0.7s ease 1.4s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards; /* Safari 和 Chrome */}
+.main-text>p:nth-child(1){ text-align: center;}
+.main-text img{ width: 100%;}
+.main-text a{ width: 80px;height: 30px;color: #ffffff;
+    text-decoration: none;text-align: center;line-height: 30px;
+    font-size: 14px;background-color: #1ABD9B;position: absolute;top: 24vh;border-radius:4px;right: 0; }
+.c-FFE{ color: #FFE0A9;font-family: "KaiTi","SimSun";font-size: 18px;font-weight: bold;}
+.fz-22{ font-size: 22px;font-family: "KaiTi","SimSun";font-weight: bolder;}
+.flex{ display: flex;align-content: center;}
+.bolder{ font-weight: bolder;font-size: 20px;text-align: right;}
+.mb-15{ margin-bottom: 15px;}
+.mb-30{ margin-bottom: 30px;}
+.lh-42{ line-height: 42px;}
+.tr{ justify-content: flex-end;}
+.tr p{ font-size: 18px;font-weight: bold;font-family: "KaiTi","SimSun";}
+.space-between{ justify-content: space-between;}
